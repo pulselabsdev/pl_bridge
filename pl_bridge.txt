@@ -1,6 +1,6 @@
 {
     "version": "1.2.1",
-    "release_date": { "day": 3, "month": 7, "year": 2026 },
+    "release_date": { "day": 13, "month": 10, "year": 2026 },
     "notes": 
 
     "Fixed
