@@ -1,5 +1,16 @@
 {
-    "version": "1.2.0",
+    "version": "1.2.1",
     "release_date": { "day": 3, "month": 7, "year": 2026 },
-    "notes": "Initial release"
+    "notes": 
+
+    "Fixed
+
+    • `StoreVehicle` now always writes `model` (hash) and `plate` into the props JSON when the caller leaves them out. cd_garage and ESX `owned_vehicles` read the vehicle from this JSON,
+        so vehicles stored without them couldn't be put back in the garage.
+    • `ApplyMaxUpgrades_Custom` export restored. It was removed in 1.2.0, which broke test drives in older scripts such as pl_donatorshop 1.0.0.
+        It now applies native max upgrades and never errors, so shop and bridge versions don't have to match exactly.
+    
+    •• Updating ••
+
+    • Replace all files except `config.lua`. No config changes are needed."
 }
